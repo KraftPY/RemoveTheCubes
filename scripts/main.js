@@ -5,7 +5,7 @@ import { getRandomColor, getRandom, getRandomPosition, checkUniquePosition, seco
 const minSizeCube = 20;
 const maxSizeCube = 60;
 const startCubes = 15; // no more than 100
-const time = 30;
+const time = 60;
 // -------------------------
 
 const dom = {
