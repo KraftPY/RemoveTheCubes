@@ -25,7 +25,7 @@ export default class Cube {
         this.$el.style.top = this._top + 'px';
         this.$el.style.left = this._left + 'px';
         this.$parent.append(this.$el);
-        if (isStart && getRandom(1, 20) < 4) {
+        if (isStart && getRandom(1, 10) === 1) {
             this._timeCube();
         }
     }
