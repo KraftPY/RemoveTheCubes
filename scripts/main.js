@@ -4,7 +4,7 @@ import { getRandomColor, getRandom, getRandomPosition, checkUniquePosition, seco
 // ------Game settings------
 const minSizeCube = 20;
 const maxSizeCube = 60;
-const startCubes = 10; // no more than 100
+const startCubes = 20; // no more than 100
 const time = 30;
 // -------------------------
 
