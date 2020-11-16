@@ -4,7 +4,7 @@ import { getRandomColor, getRandom, getRandomPosition, checkUniquePosition, seco
 // ------Game settings------
 const minSizeCube = 20;
 const maxSizeCube = 60;
-const startCubes = 20; // no more than 100
+const startCubes = 15; // no more than 100
 const time = 30;
 // -------------------------
 
@@ -106,7 +106,8 @@ function addPonits(pts) {
     dom.$points.value = (points < 10) ? '0' + points : points;
 
     // generate new cubes
-    const n = getRandom(0, 2);
+    // if the field has less than 4 cubes, then add 2 new ones
+    const n = (arrCubes.length < 4)? 2 : getRandom(0, 2);
     generateNewCubes(n);
 }
 
