@@ -174,7 +174,7 @@ function pauseGame() {
 }
 
 function saveResult() {
-    const name = dom.$name.value
+    const name = dom.$name.value.trim();
     if (name) {
         $('#myModal').modal('hide');
         const newLine = {
